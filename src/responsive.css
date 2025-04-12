@@ -1,0 +1,71 @@
+/* Grundlegende responsive Anpassungen */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.content-wrapper {
+    padding: 20px;
+}
+
+/* Artikel-Liste */
+.article-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.article-card h3 {
+    font-size: 1.2em;
+}
+
+.article-card p {
+    font-size: 0.9em;
+}
+
+/* Hero Carousel (Anpassung der Höhe für kleinere Bildschirme) */
+.hero-carousel {
+    height: auto;
+    min-height: 300px; /* Minimale Höhe */
+}
+
+.hero-image {
+    object-fit: cover; /* Kann je nach Bedarf angepasst werden */
+}
+
+/* Bildgalerie (Grundlegendes Layout) */
+.image-gallery {
+    margin-top: 30px;
+}
+
+/* Media Query für Tablets */
+@media (max-width: 992px) {
+    body {
+        font-size: 15px;
+    }
+
+    .content-wrapper {
+        padding: 15px;
+    }
+}
+
+/* Media Query für Smartphones */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    .article-list {
+        grid-template-columns: 1fr; /* Nur eine Spalte auf kleinen Bildschirmen */
+    }
+
+    .hero-carousel {
+        min-height: 200px;
+    }
+
+    .image-gallery h2 {
+        font-size: 1.3em;
+    }
+}
