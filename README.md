@@ -1,5 +1,7 @@
 # DTF CRUD - React App
 
+PHP Webserver, Sqlite3 und npm start.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
